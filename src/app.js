@@ -1,6 +1,3 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
 
 let pronoun = ["the", "our", "us", "that"];
 let adj = ["great", "big", "cute", "little"];
@@ -8,14 +5,15 @@ let noun = ["jogger", "racoon", "Bigger"];
 let dominio = [".com", ".es", ".net", ".us"];
 
 const nombreDominios = () => {
-  for (let i = 0; index < pronoun.length; index++) {
-    for (let a = 0; index < adj.length; index++) {
-      for (let n = 0; index < noun.length; index++) {
-        for (let d = 0; index < dominio.length; index++) {}
+  for (let i = 0; i < pronoun.length; i++) {
+    for (let a = 0; a < adj.length; a++) {
+      for (let n = 0; n < noun.length; n++) {
+        for (let d = 0; d < dominio.length; d++) {
+          console.log(pronoun[i] + adj[a] + noun[n] + dominio[d]);
+        }
       }
     }
   }
-  console.log(pronoun[i] + adj[a] + noun[n] + dominio[d]);
 };
 
-console.log(nombreDominios);
+nombreDominios();
